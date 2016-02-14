@@ -1,0 +1,34 @@
+{
+   "contacts": [
+      {
+         "first_name": "Moran",
+         "last_name": "Aqua",
+         "phone": "054-4244640",
+         "id": "1"
+      },
+      {
+         "first_name": "Sharon",
+         "last_name": "Hadad",
+         "phone": "054-3655345",
+         "id": "2"
+      },
+      {
+         "first_name": "Lior",
+         "last_name": "Nimrod",
+         "phone": "054-3677653",
+         "id": "3"
+      },
+      {
+         "first_name": "Yarden",
+         "last_name": "Shem",
+         "phone": "052-3422675",
+         "id": "4"
+      },
+      {
+         "first_name": "Mor",
+         "last_name": "Dor",
+         "phone": "050-7244356",
+         "id": "5"
+      }
+   ]
+}

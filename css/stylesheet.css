@@ -1,0 +1,26 @@
+
+.warpper{
+    margin:10px;
+}
+
+.search{
+    border: 2px solid black;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+.form-group{
+    width: 20%;
+    margin: 0 auto;
+}
+
+lable{
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+th{
+    font-weight: bold;
+    font-size: 15px;
+}

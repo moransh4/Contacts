@@ -1,0 +1,21 @@
+
+<div class="form-group">
+    <h1>Edit Contact</h1>
+
+    <form action="" ng-submit="submit()">
+        <label>First name:</label>
+        <input type="text"  pattern="[a-zA-Z]+" class="form-control" name="firstname" value="" ng-model="person.first_name" placeholder="{{contact.first_name}}" >
+        <br>
+        <label>Last name:</label>
+        <input type="text" pattern="[a-zA-Z]+" class="form-control" name="lastname" value="" ng-model="person.last_name" placeholder="{{contact.last_name}}">
+        <br>
+        <label>Phone: (format: xxx-xxxxxxx)</label>
+        <input type="tel" pattern="^\d{3}-\d{7}$" class="form-control" name="phone" value="" ng-model="person.phone" placeholder="{{contact.phone}}"><br>
+
+        <button type="submit" class="btn btn-default">Submit</button>
+
+        <a type="button" ng-href="{{toContacts}}" class="btn btn-default">Back to contacts</a>
+
+    </form>
+
+</div>

@@ -1,0 +1,37 @@
+<div class="warpper">
+
+    <h1>Contacts</h1>
+
+    <lable>Search:</lable><input class="search" ng-model="search">
+
+    <table st-table="rowCollection" class="table table-striped">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Phone Number</th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="contact in contacts | filter : search">
+            <td>{{ contact.id }}</td>
+            <td>{{ contact.first_name }}</td>
+            <td>{{ contact.last_name }}</td>
+            <td>{{ contact.phone }}</td>
+            <td><a type="button" class="btn btn-primary glyphicon glyphicon-edit" ng-href="#/contacts/{{contact.id}}" target="_self"></a></td>
+            <td><button type="button" class="btn btn-danger glyphicon glyphicon-trash" ng-click="delete($index)"></button></td>
+        </tr>
+        <tfoot>
+          <tr>
+            <td></td>
+            <td><input type="text" pattern="[a-zA-Z]+" placeholder="First Name" class="form-control" ng-model="person.first_name" required/></td>
+            <td><input type="text" pattern="[a-zA-Z]+" placeholder="Last Name" class="form-control" ng-model="person.last_name" required/></td>
+            <td><input type="tel" pattern="^\d{3}-\d{7}$"  placeholder="Phone Number" class="form-control" ng-model="person.phone" required/></td>
+            <td><button type="button" class="btn btn-success glyphicon glyphicon-plus" ng-click="add()">Add</button></td>
+          </tr>
+        <tbody>
+    </table>
+
+</div>
